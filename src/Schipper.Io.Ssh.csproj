@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Deterministic>true</Deterministic>
+    <IsAotCompatible>true</IsAotCompatible>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Schipper.Io.Ssh</PackageId>
+    <Version>0.1.0-dev</Version>
+    <Authors>Schipper</Authors>
+    <Company>SCHIPPER.IO LLC</Company>
+    <Product>Schipper.Io.Ssh</Product>
+    <Description>A minimal, dependency-free from-scratch SSH-2 server and client (ECDH P-256, aes256-gcm) that surfaces each session as a byte channel with terminal size/resize, with subsystem channels, publickey auth, and a persistent ECDSA host key.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Schipper.Io.Ssh.Tests" />
+  </ItemGroup>
+
+</Project>
